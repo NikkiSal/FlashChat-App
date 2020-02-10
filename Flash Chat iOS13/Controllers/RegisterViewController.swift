@@ -17,10 +17,9 @@ class RegisterViewController: UIViewController {
                     //but for real, make a popup or put the label the description into a label  so that the user knows, what's wrong.
                 } else {
                     //Navigate to the Chat viewController
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self) //self. is neccessary becuase we are inside a closure inside of any methods we are calling on the current class
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self) //self. is neccessary becuase we are inside a closure inside of any methods we are calling on the current class
                 }
             }
         }
     }
-    
 }

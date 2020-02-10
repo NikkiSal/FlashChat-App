@@ -8,6 +8,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        let db = Firestore.firestore()
+        print(db) // to make sure it's working and making the firestore, if its not working, make sure you have the latest version of cocoapods installed.
         return true
     }
 
